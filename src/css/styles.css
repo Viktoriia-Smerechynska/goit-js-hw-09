@@ -16,3 +16,54 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  list-style: none;
+  margin: 30px;
+  padding: 0;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.gallery-link {
+  display: block;
+  text-decoration: none;
+}
+
+.gallery-image {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  object-fit: cover;
+}
+.gallery-image:hover {
+  cursor: zoom-in;
+  transform: scale(1.04);
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  max-width: 360px;
+  margin: 30px auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
